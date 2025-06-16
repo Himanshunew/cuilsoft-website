@@ -1,0 +1,38 @@
+{
+  "name": "cuilsoft",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^3.9.1",
+    "@reduxjs/toolkit": "^1.8.5",
+    "animate.css": "^4.1.1",
+    "aos": "^2.3.4",
+    "country-state-city": "^3.2.1",
+    "next": "12.1.6",
+    "react": "18.1.0",
+    "react-countup": "^6.2.0",
+    "react-dom": "18.1.0",
+    "react-hook-form": "^7.54.2",
+    "react-icons": "^4.12.0",
+    "react-modal": "^3.16.3",
+    "react-redux": "^8.0.2",
+    "react-share": "^4.4.1",
+    "react-slick": "^0.30.3",
+    "slick-carousel": "^1.8.1",
+    "swiper": "^8.0.0",
+    "yup": "^1.6.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.7",
+    "eslint": "8.17.0",
+    "eslint-config-next": "12.1.6",
+    "postcss": "^8.4.14",
+    "tailwindcss": "^3.1.2"
+  }
+}

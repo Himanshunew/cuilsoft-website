@@ -1,0 +1,18 @@
+export const Features = [
+  "Static Type of Website",
+  "Unlimited Revisions",
+  "10 Number of Pages",
+  "2 Design Concepts",
+  "Unique Home Page Design",
+  "Custom Header and Background",
+  "Rotating Banner Images",
+  "Online Contact Form",
+  "SMO Pages Integration",
+  "Newsletter Signup",
+  "Mobile Responsive",
+  "On the Fly Revisions",
+  "Search Engine Friendly Design",
+  "Site Map Creation",
+  "Search Engine Submissions",
+  "2 Month Free Website Maintenance",
+]
