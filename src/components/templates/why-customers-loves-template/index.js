@@ -45,9 +45,9 @@ export const WhyCustomersLovesTemplate = () => {
             data-aos-duration="1000"
             className="relative h-[280px] w-[600px] mx-auto flex gap-5  justify-center flex-wrap"
           >
-            {testimonialImages.map((image) => (
+            {testimonialImages.map((image,id) => (
               <div
-                key={image.id}
+                key={id}
                 className={`floating-image ${
                   image.id % 2 === 0 ? "mt-5" : "mt-0"
                 }`}
@@ -58,7 +58,6 @@ export const WhyCustomersLovesTemplate = () => {
                     alt={image.alt}
                     width={1000}
                     height={1000}
-                    fill
                     className="object-cover w-full h-full"
                   />
                 </div>

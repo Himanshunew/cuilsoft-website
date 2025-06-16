@@ -85,7 +85,7 @@ export default function GridLayout() {
       <div className="relative w-full  messageItem">
         <Slider {...settings} >
           {[1, 2, 3].map((item, i) => (
-              <GridItem item={item} />
+              <GridItem key={i} item={item} />
           ))}
         </Slider>
       </div>
