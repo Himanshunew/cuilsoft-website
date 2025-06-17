@@ -7,7 +7,7 @@ import { activeTab, selectTab } from "../../../redux/tabs-slice";
 export const Portfolio = () => {
   const dispatch = useDispatch();
   const isActive = useSelector(selectTab);
-  
+
   const handleTabs = (tab) => {
     dispatch(activeTab(tab));
     document
@@ -24,23 +24,8 @@ export const Portfolio = () => {
             title="Our Portfolio"
             des="We have worked on some of the best projects over the years. Check out our work here"
           />
-          <div className=" container grid grid-cols-1 md:grid-cols-3 md:gap-7 gap-20">
-            {PortfolioBoxData.map((item, i) => (
-              <div key={i} onClick={() => handleTabs(item.tab)}>
-                <PortfolioBox
-                  bgColor={
-                    isActive === item.tab ? "tab_active" : "tab_inactive"
-                  }
-                  color={
-                    isActive === item.tab ? "text-white" : "text-secondary"
-                  }
-                  source={item.source}
-                  linkto={item.linkto}
-                  title={item.title}
-                  subtitle={item.subtitle}
-                />
-              </div>
-            ))}
+          <div className=" container">
+            <PortfolioBox />
           </div>
         </div>
       </div>

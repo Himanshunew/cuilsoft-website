@@ -24,13 +24,27 @@ export const Navigations = () => {
                   linkto={item.pathname}
                 />
                 <div className="dropdown-content">
-                  {DropdownData.map((itm, i) => (
-                    <NavItem
-                      key={i}
-                      icon={itm.icon}
-                      title={itm.title}
-                      linkto={itm.linkto}
-                    />
+                  {DropdownData.map((item) => (
+                    <div key={item.title} className="group relative">
+                      <a href={item.linkto} className="flex items-center gap-2 px-4 py-2 hover:bg-gray-100">
+                        {item.icon}
+                        {item.title}
+                      </a>
+
+                      {item.submenu && (
+                        <div className="absolute top-0 left-full ml-1 hidden group-hover:block bg-white shadow-lg z-10 min-w-max">
+                          {item.submenu.map((subitem) => (
+                            <a
+                              key={subitem.title}
+                              href={subitem.linkto}
+                              className="block px-4 py-2 whitespace-nowrap hover:bg-gray-100"
+                            >
+                              {subitem.title}
+                            </a>
+                          ))}
+                        </div>
+                      )}
+                    </div>
                   ))}
                 </div>
               </div>
