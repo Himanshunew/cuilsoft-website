@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { useState } from "react";
 import { Globe, Smartphone, Palette, Code } from "lucide-react";
-import PortfolioCard from "../../portfolio-card";
+import { PortfolioCard } from "../portfolio-card";
 
 export const PortfolioBox = () => {
   const [activeTab, setActiveTab] = useState("web");
@@ -24,7 +24,7 @@ export const PortfolioBox = () => {
                 <button
                   key={tab.id}
                   onClick={() => setActiveTab(tab.id)}
-                  className={`flex-1 flex items-center justify-center gap-2 px-4 py-4 text-sm font-medium transition-all duration-300 relative ${activeTab === tab.id
+                  className={`flex-1 flex items-center text-primary leading-6 font-semibold justify-center gap-2 px-4 py-4 text-sm  transition-all duration-300 relative ${activeTab === tab.id
                     ? "text-secondary bg-blue-50 border-b-2 border-secondary"
                     : "text-gray-500 hover:text-gray-700 hover:bg-gray-50"
                     }`}

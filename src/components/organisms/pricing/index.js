@@ -1,5 +1,5 @@
 import React from 'react'
-import PlanCard from '../../price_table';
+import PlanCard from '../../molecules/price_table';
 import { plans } from '../../../constants/plan_data';
 import { SectionHeader } from '../../molecules/section-header';
 
